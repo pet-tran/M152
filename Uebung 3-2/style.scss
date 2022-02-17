@@ -1,0 +1,29 @@
+.person{
+    width: min-content;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: lightgray;
+        box-shadow: #777279 1px 1px;
+    
+        .title{
+            font-weight: bold;
+            margin: 5px;
+        }
+    
+        .text{
+            margin: 5px;
+        }
+    
+        img{
+            border-radius: 50%;
+            height: 300px;
+            width: 300px;
+        }
+    
+        button{
+            width: 95%;
+            margin: 5px;
+            background-color: #5eeb34;
+        }
+    }

@@ -1,0 +1,35 @@
+.person {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: lightgray;
+  box-shadow: #777279 1px 1px;
+  transition: 2s all;
+}
+.person:hover {
+  height: 110%;
+  width: 110%;
+}
+.person:hover button {
+  background-color: green;
+}
+.person .title {
+  font-weight: bold;
+  margin: 5px;
+}
+.person .text {
+  margin: 5px;
+}
+.person img {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+}
+.person button {
+  width: 95%;
+  margin: 5px;
+  background-color: #5eeb34;
+}/*# sourceMappingURL=style.css.map */
