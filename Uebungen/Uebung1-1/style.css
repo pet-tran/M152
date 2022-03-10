@@ -1,0 +1,58 @@
+/* body{
+    background-color: black;
+} */
+
+.img{
+    width: 100px;
+    height: 100px;
+    /* height: 100px; */
+
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+p{
+    font-size: 20px;
+}
+
+img{
+    animation: rotation 4s infinite linear;
+}
+
+Body {
+    background: linear-gradient(149deg, #246655, #2beab9, #52ea4a, #eedc48, #ee5f48, #e616a7, #167fe6, #153e67);
+    background-size: 1600% 1600%;
+
+    -webkit-animation: Ayaya 1s ease infinite;
+    -moz-animation: Ayaya 1s ease infinite;
+    animation: Ayaya 1s ease infinite;
+}
+
+@-webkit-keyframes Ayaya {
+    0%{background-position:0% 34%}
+    50%{background-position:100% 67%}
+    100%{background-position:0% 34%}
+}
+@-moz-keyframes Ayaya {
+    0%{background-position:0% 34%}
+    50%{background-position:100% 67%}
+    100%{background-position:0% 34%}
+}
+@keyframes Ayaya {
+    0%{background-position:0% 34%}
+    50%{background-position:100% 67%}
+    100%{background-position:0% 34%}
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
