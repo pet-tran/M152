@@ -1,0 +1,77 @@
+body {
+    display: grid;
+    grid-template-rows: 15vh 30vh 15vh 15vh;
+    grid-template-columns: 2fr 2fr 2fr 1fr 1fr;
+}
+
+.magenta {
+    background: magenta;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.salmon {
+    background: salmon;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.purple {
+    background: purple;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.darkGreen {
+    background: darkgreen;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.sandishColoridk {
+    background: rgb(226, 187, 127);
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.slateBlue {
+    background: slateblue;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.lime {
+    background: lime;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.chocolate {
+    background-color: chocolate;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+.bisque {
+    background-color: bisque;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
