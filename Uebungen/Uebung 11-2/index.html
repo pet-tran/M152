@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="row">
+        <video id="video" width="300" height="300" controls>
+            <source src="[東方] Dr. Latency's Freak Report - (11) Eternal Transient Reign.mp4" type="video/mp4">
+            <!-- <source src="movie.ogg" type="video/ogg"> -->
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="row">
+        <button id="btn-play" class="btn btn-primary inputs m-1">Play</button>
+        <button id="btn-volume-up" class="btn btn-primary inputs m-1">Vol up</button>
+        <button id="btn-volume-down" class="btn btn-primary inputs m-1">Vol down</button>
+        <button id="btn-speed-up" class="btn btn-primary inputs m-1">Accelerate</button>
+        <button id="btn-speed-down" class="btn btn-primary inputs m-1">Slow down</button>
+        <button id="btn-loop" class="btn btn-primary inputs m-1">Loop</button>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+        const video = document.querySelector("#video");
+        let btnPlay = document.getElementById("btn-play").addEventListener("click", play);
+        let btnVolUp = document.getElementById("btn-play").addEventListener("click", volUp);
+        let btnVolDown = document.getElementById("btn-play").addEventListener("click", volDown);
+        let btnSpeedUp = document.getElementById("btn-play").addEventListener("click", speedUp);
+        let btnSpeedDown = document.getElementById("btn-play").addEventListener("click", speedDown);
+        let btnLoop = document.getElementById("btn-play").addEventListener("click", loop);
+        let started = false
+
+        function play() {
+            console.log("doSmthPls");
+            if (started) {
+                video.pause();
+            } else {
+                video.play();
+            }
+            started = !started;
+        }
+
+        function volUp() {
+            video.volume -= 0.1;
+        }
+
+        function volDown() {
+            video.volume += 0.1;
+        }
+
+        function speedUp() {
+            video.playbackRate += 0.1;
+        }
+
+        function speedDown() {
+            video.playbackRate -= 0.1;
+        }
+
+        function loop() {
+            video.loop = !video.loop;
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
